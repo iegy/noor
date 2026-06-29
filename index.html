@@ -363,11 +363,11 @@
     <script>
         const users = {
             admin: { password: '8080', role: 'admin', name: 'مدير النظام' },
-            user: { password: '1234', role: 'user', name: 'موظف استقبال' }
+            user: { password: '1234', role: 'user', name: 'موظف المبيعات' }
         };
         let currentUser = null;
         let orders = JSON.parse(localStorage.getItem('noor_premium_orders')) || [];
-        let branches = JSON.parse(localStorage.getItem('noor_branches')) || ['رشيد', 'المنصورة', 'دمنهور'];
+        let branches = JSON.parse(localStorage.getItem('noor_branches')) || ['رشيد', 'الرمل', 'سموحة'];
         let currentBranch = localStorage.getItem('noor_current_branch') || 'رشيد';
         let currentFilter = 'all';
         let currentTab = 'main';
